@@ -1,0 +1,397 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'mukta', sans-serif;
+}
+
+.logo-mario {
+    height: 200px;
+}
+
+button {
+
+    color: white;
+    background: #c51111;
+    border-radius: 3px;
+    border: none;
+    width: 200px;
+    height: 50px;
+    cursor: pointer;
+    text-transform: uppercase;
+    font-weight: bold;
+    margin-top: 30px;
+
+}
+
+.botao-contato:hover {
+    cursor: pointer;
+    transition: 0.8s ease-in-out;
+    transform: scale(1.3);
+    color: black
+}
+
+.imagem-mario-luidi {
+    height: 500px;
+}
+
+body {
+    position: fixed;
+
+
+}
+
+.caixa-principal {
+    width: 40%;
+
+}
+
+
+.caixa-video {
+    position: fixed;
+    top: 0;
+    z-index: -1;
+
+}
+
+video {
+    min-height: 100%;
+    min-width: 100%;
+    position: fixed;
+    top: 0;
+
+
+
+}
+
+.caixa-mae {
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    padding: 100px;
+    height: 100vh;
+
+
+}
+
+.mascara {
+    width: 100%;
+    height: 100%;
+    background: linear-gradient(109deg, rgba(10, 12, 16, 0.99) 15%, rgba(10, 12, 16, 0.7) 50%, rgba(10, 12, 16, 0.99) 85%);
+    top: 0;
+    position: fixed;
+}
+
+p {
+    color: white;
+    font-size: 20px;
+}
+
+.link-whatsapp img {
+    height: 60px;
+    position: fixed;
+    right: 20px;
+    bottom: 20px;
+
+}
+
+.header {
+    display: flex;
+    align-items: center;
+    gap: 30px;
+    margin: 30px;
+}
+
+.header img {
+    height: 60px;
+
+}
+
+.header a {
+    color: white;
+    font-size: 24px;
+    cursor: pointer;
+}
+
+.header a:hover {
+    color: #c51111;
+    font-size: 26px;
+    transition: 0.5s ease-in-out;
+}
+
+.formulario-fale-conosco {
+    background-color: white;
+    display: flex;
+    gap: 10px;
+    flex-direction: column;
+    position: fixed;
+    top: 50%;
+    left: -300px;
+    padding: 20px;
+    border-radius: 5px;
+    transition: left 1s ease-in-out;
+
+
+}
+
+input {
+    height: 40px;
+    border-radius: 5px;
+    border: 1px solid grey;
+    padding-left: 5px;
+    outline-color: #18d80f;
+}
+
+textarea {
+    width: 270px;
+    height: 100px;
+    border-radius: 5px;
+    border: 1px solid grey;
+    padding-left: 5px;
+    outline-color: #18d80f;
+
+}
+
+
+.mascara-formulario {
+    visibility: hidden;
+    position: fixed;
+    top: 0;
+    width: 100vw;
+    height: 100vh;
+    background: linear-gradient(109deg, rgba(10, 12, 16, 0.99) 15%, rgba(10, 12, 16, 0.7) 50%, rgba(10, 12, 16, 0.99) 85%);
+    transition: visibility 1s ease-in-out;
+
+
+
+}
+
+@media (max-width: 1100px) {
+
+    p {
+        display: none;
+    }
+
+    .caixa-mae {
+        flex-direction: column;
+        padding: 10px;
+    }
+
+    .caixa-principa {
+        display: flex;
+        align-items: center;
+        flex-direction: column;
+    }
+
+
+}
+
+@media (max-width: 1100px) {
+    p {
+        display: none;
+
+    }
+
+    .caixa-mae {
+        flex-direction: column;
+        justify-content: flex-start;
+        padding: 10px;
+    }
+
+    .caixa-principal {
+        display: flex;
+        align-items: center;
+        flex-direction: column;
+    }
+
+    .imagem-mario-luidi {
+        width: 80vw;
+        height: auto;
+    }
+/*                           
+
+*/
+    .header {
+        display: flex;
+        margin: 10px;
+        align-items: center;
+        justify-content: center;
+    }
+
+    .header img {
+        display: none;
+    }
+
+    .header a {
+        font-size: 20px;
+    }
+
+
+}
+
+
+/*    <button id="close-button" onclick="resetForm()">X</button>
+
+ inicial
+     top:50%;
+     left:-300px;
+   final
+    <div class="mascara-formulario"></div>
+     top:30%;
+     left:50%;  
+     transform: translateX;(-50%);
+     background: linear-gradient(109deg, rgba(10, 12, 16, 0.99) 15%, rgba(10, 12, 16, 0.7) 50%, rgba(10, 12, 16, 0.99) 85%);;
+}
+
+
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Cases de Sucesso</title>
+  <style>
+    body {
+      background-color: #0d1117;
+      font-family: Arial, Helvetica, sans-serif;
+      color: #fff;
+      margin: 0;
+      padding: 40px 20px;
+    }
+
+    h1 {
+      text-align: center;
+      font-size: 32px;
+      margin-bottom: 40px;
+      color: #00c3ff;
+    }
+
+    .cases-container {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
+      gap: 30px;
+      max-width: 1100px;
+      margin: 0 auto;
+    }
+
+    .case-card {
+      background: #111827;
+      border-radius: 15px;
+      padding: 25px;
+      box-shadow: 0 4px 12px rgba(0,0,0,0.4);
+      transition: transform 0.6s ease, box-shadow 0.3s ease, opacity 0.6s ease;
+      position: relative;
+      overflow: hidden;
+
+      /* animação inicial */
+    /*  opacity: 0;
+      transform: translateY(50px);
+    }
+
+    /* quando visível */
+    /*.case-card.show {
+      opacity: 1;
+      transform: translateY(0);
+    }
+
+    .case-card:hover {
+      transform: translateY(-5px);
+      box-shadow: 0 6px 16px rgba(0,0,0,0.6);
+    }
+
+    .case-icon {
+      font-size: 40px;
+      color: #00c3ff;
+      margin-bottom: 15px;
+    }
+
+    .case-card h2 {
+      font-size: 20px;
+      color: #00c3ff;
+      margin-bottom: 15px;
+    }
+
+    .case-card p {
+      font-size: 15px;
+      line-height: 1.5;
+      margin-bottom: 12px;
+      color: #d1d5db;
+    }
+
+    .highlight {
+      color: #00ffcc;
+      font-weight: bold;
+    }
+  /*style>
+  <!-- Font Awesome -->
+  <script src="https://kit.fontawesome.com/2c36e9b7b1.js" crossorigin="anonymous"></script>
+</head>
+<body>
+
+  <h1>Cases de Sucesso</h1>
+
+  <div class="cases-container">
+    
+    <!-- Caso 1 -->
+    <div class="case-card">
+      <div class="case-icon">
+        <i class="fas fa-store"></i>
+      </div>
+      <h2>Rede de Lojas Agropecuárias</h2>
+      <p>Uma rede de lojas voltada ao agronegócio, com um catálogo diversificado: materiais para construção, materiais elétricos, EPIs, tubos e conexões, ferramentas, peças para máquinas agrícolas e medicamentos veterinários.</p>
+      <p>Estoque inicial: <span class="highlight">16 mil SKUs</span> e <span class="highlight">MR$ 18</span> distribuídos em 11 lojas.</p>
+      <p>Após a metodologia ODP:</p>
+      <p>✔ Redução para <span class="highlight">13 mil SKUs</span> e estoque de <span class="highlight">MR$ 15</span>.</p>
+      <p>✔ Nível de serviço de <span class="highlight">87%</span> para <span class="highlight">98,3%</span>.</p>
+    </div>
+
+    <!-- Caso 2 -->
+    <div class="case-card">
+      <div class="case-icon">
+        <i class="fas fa-tractor"></i>
+      </div>
+      <h2>Concessionária Agrícola</h2>
+      <p>Com mais de 8 filiais distribuídas nos Campos Gerais, o desafio era melhorar o nível de serviço que estava impactando negativamente o NPS da empresa.</p>
+      <p>Estoque inicial: <span class="highlight">12 mil SKUs</span> e <span class="highlight">MR$ 15,5</span>, com nível de serviço de apenas <span class="highlight">67%</span>.</p>
+      <p>Após a metodologia ODP:</p>
+      <p>✔ Redução para <span class="highlight">9 mil SKUs</span>.</p>
+      <p>✔ Nível de serviço melhorado para <span class="highlight">93,7%</span>.</p>
+      <p>✔ Impacto positivo no <span class="highlight">NPS</span> da empresa.</p>
+    </div>
+
+    <!-- Caso 3 -->
+    <div class="case-card">
+      <div class="case-icon">
+        <i class="fas fa-chart-line"></i>
+      </div>
+      <h2>Concessionária Agrícola 2</h2>
+      <p>Com mais de 3 filiais nos Campos Gerais, este caso contava com estoque de <span class="highlight">MR$ 2</span> e mais de <span class="highlight">3 mil SKUs</span>, além de <span class="highlight">MR$ 1,2</span> em itens sem venda.</p>
+      <p>Após a metodologia ODP:</p>
+      <p>✔ Redução de <span class="highlight">KR$ 400</span> em itens sem venda.</p>
+      <p>✔ Nível de serviço elevado de <span class="highlight">77%</span> para <span class="highlight">94,5%</span>.</p>
+      <p>✔ Resultados conquistados em menos de <span class="highlight">6 meses</span>.</p>
+    </div>
+
+  </div>
+
+  <script>
+    // observar elementos quando aparecem na tela
+    const cards = document.querySelectorAll('.case-card');
+    const observer = new IntersectionObserver(entries => {
+      entries.forEach(entry => {
+        if (entry.isIntersecting) {
+          entry.target.classList.add('show');
+          observer.unobserve(entry.target); // anima só 1 vez
+        }
+      });
+    }, { threshold: 0.2 });
+
+    cards.forEach(card => {
+      observer.observe(card);
+    });
+  </script>
+
+</body>
+</html>
+
+/*
