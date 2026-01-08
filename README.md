@@ -7,3 +7,5 @@
 <h3> - 33% HTML</h3>
 <h3> - 60% CSS</h3>
 <h3> - 7%  javascript</h3>
+<br>
+<h3> Em saber que foi o meu primeiro projeto desenvolvido, e com foco em evoluir 1 passo a cada dia.</h3>
